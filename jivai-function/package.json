@@ -1,0 +1,12 @@
+{
+  "name": "jivai-function",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "openai": "^4.56.0"
+  }
+}

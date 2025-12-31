@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JIVAI – Medical Safety Assistant</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0a4ea3;
+      margin-bottom: 20px;
+    }
+
+    /* ===== MAIN LAYOUT ===== */
+    .container {
+      display: flex;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .panel {
+      flex: 1;
+      background: #ffffff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .panel h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      font-size: 15px;
+    }
+
+    button {
+      background: #0a4ea3;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button.secondary {
+      background: #555;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #f9f9f9;
+      margin-top: 6px;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    #status {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    #explain {
+      margin-top: 10px;
+      background: #fff8e1;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    /* ===== CHAT ===== */
+    #chat-log {
+      background: #f1f1f1;
+      padding: 10px;
+      height: 320px;
+      overflow-y: auto;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    #chat-log div {
+      margin-bottom: 6px;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>🩺 JIVAI</h1>
+
+<div class="container">
+
+  <!-- LEFT PANEL -->
+  <div class="panel">
+    <h3>💊 Medicine Safety</h3>
+
+    <input id="name" placeholder="Medicine Name" />
+    <input id="time" type="time" />
+    <input id="expiry" type="date" />
+
+    <button onclick="addMedicine()">➕ Add Medicine</button>
+    <button class="secondary" onclick="enableNotifications()">🔔 Enable Notifications</button>
+    <button class="secondary" onclick="explainSafety()">🤖 Explain Safety</button>
+    <button class="secondary" onclick="deleteExpiredMedicines()">
+    🧹 Delete Expired Medicines </button>
+
+    <div id="status">Checking status...</div>
+    <ul id="list"></ul>
+    <div id="explain"></div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="panel">
+    <h3>🤖 JIVAI Assistant</h3>
+
+    <div id="chat-log"></div>
+
+    <input id="chat-input" placeholder="Ask about medicine safety..." />
+    <button onclick="sendChat()">Send</button>
+  </div>
+
+</div>
+
+<script src="chat.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
