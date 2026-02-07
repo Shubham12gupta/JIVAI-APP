@@ -1,6 +1,12 @@
 <img width="540" height="1196" alt="image" src="https://github.com/user-attachments/assets/f813e8a2-96f7-4b53-81a9-245882bba767" />
 
 💊 Smart Medicine Reminder & Expiry Alert (JIVAI)
+
+
+
+
+
+
 A lightweight web-based medicine reminder system that helps users track medicines, get dose reminders, and detect expired medicines in real time. The app also includes a simple AI-style assistant (JIVAI) for safety explanations and guidance.
 ________________________________________
 🚀 Features
