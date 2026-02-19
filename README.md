@@ -70,6 +70,39 @@ The built-in JIVAI Assistant helps explain:
 •	Reminder usage
 It uses rule-based AI logic for fast and offline-friendly responses.
 ________________________________________
+JIVAI – AI-Powered Offline Medical Safety
+Assistant (Complete Feature List)
+• Offline-first medication safety system using IndexedDB to ensure uninterrupted access without
+internet.
+• Automatic medicine expiry detection to prevent consumption of unsafe or expired drugs.
+• Missed dose detection based on scheduled medicine timings to improve treatment adherence.
+• Real-time safety re-evaluation that updates medicine status automatically as time passes.
+• Local device notifications for medicine reminders and missed dose alerts without internet
+dependency.
+• Duplicate medicine detection to avoid accidental double medication entries.
+• Clear visual safety indicators (Safe, Caution, Danger) for easy understanding by elderly users.
+• Network-aware behavior that adapts seamlessly between online and offline modes.
+• Cloud-based medical safety explanations hosted on Microsoft Azure Functions (read-only,
+non-diagnostic).
+• Graceful offline fallback that ensures patient safety even when cloud services are unavailable.
+• Medical Safety Chatbot UI integrated within the app for user-friendly interaction.
+• Microsoft Azure-based Medical Safety Assistant providing awareness-only guidance.
+• Multi-language chatbot support using Microsoft Azure Translator for native language
+accessibility.
+• Support for regional Indian languages such as Hindi, Marathi, Tamil, Telugu, and more.
+• Responsible AI design with strict guardrails: no diagnosis, no prescriptions, no emergency
+handling.
+• Built-in medical disclaimers encouraging professional healthcare consultation.
+• Privacy-focused architecture with local-first data storage and no mandatory user login.
+• Progressive Web App (PWA) support enabling installable, app-like experience on devices.
+• Service Worker implementation for offline caching and faster load performance.
+• Container-ready architecture supporting deployment using Docker on Azure Virtual Machines.
+• Scalable cloud deployment model combining Azure VM containers with Azure Cognitive
+Services.
+• Low-bandwidth optimized design suitable for rural and resource-constrained environments.
+• Elderly-friendly UI with simple layouts and readable text.
+• Future-ready design with optional integration of Azure OpenAI for advanced medical reasoning
+________________________________________
 🌱 Future Improvements
 •	Cloud sync & user accounts
 •	WhatsApp / SMS reminders
